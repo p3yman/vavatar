@@ -7,6 +7,6 @@ describe('VAvatar.vue', () => {
     const wrapper = shallowMount(VAvatar, {
       propsData: { msg },
     });
-    expect(wrapper.text()).toMatch('VAvatar');
+    expect(wrapper.text()).toMatch('VA');
   });
 });

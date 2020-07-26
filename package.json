@@ -18,11 +18,11 @@
     "gravatar"
   ],
   "scripts": {
-    "serve": "vue serve ./src/VAvatar.vue",
-    "serve-demo": "vue serve ./src/App.vue",
+    "start": "vue serve ./src/VAvatar.vue",
     "build": "vue-cli-service build",
     "build-package": "vue-cli-service build --target lib --name vavatar ./src/index.js",
     "test:unit": "vue-cli-service test:unit",
+    "test:demo": "vue serve ./src/Demo.vue",
     "lint": "vue-cli-service lint"
   },
   "main": "dist/vavatar.common.js",
