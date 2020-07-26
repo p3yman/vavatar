@@ -1,13 +1,31 @@
 {
   "name": "vavatar",
   "version": "0.1.0",
-  "private": true,
+  "description": "Avatar component for Vue.js framework",
+  "author": "Peyman Eskandari <peyman.eskandari@gmail.com> (https://peyman.me)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p3yman/vavatar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/p3yman/vavatar/issues"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "avatar",
+    "gravatar"
+  ],
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue serve ./src/VAvatar.vue",
+    "serve-demo": "vue serve ./src/App.vue",
     "build": "vue-cli-service build",
+    "build-package": "vue-cli-service build --target lib --name vavatar ./src/index.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "main": "dist/vavatar.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -23,8 +41,6 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
