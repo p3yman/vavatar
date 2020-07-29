@@ -18,7 +18,7 @@
     "gravatar"
   ],
   "scripts": {
-    "start": "vue serve ./src/VAvatar.vue",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-package": "vue-cli-service build --target lib --name vavatar ./src/index.js",
     "test:unit": "vue-cli-service test:unit",
