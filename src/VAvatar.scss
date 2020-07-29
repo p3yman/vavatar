@@ -1,6 +1,80 @@
 /*-----------------------------------------------------------------
 - VAvatar Styles
 -----------------------------------------------------------------*/
+// COLORS
+//------------------------------------------------
+$colors: (
+    // Red
+    'red': #f44336,
+    'red-light': #ff7961,
+    'red-dark': #ba000d,
+
+    // Pink
+    'pink': #e91e63,
+    'pink-light': #ff6090,
+    'pink-dark': #b0003a,
+
+    // Purple
+    'purple': #9c27b0,
+    'purple-light': #d05ce3,
+    'purple-dark': #6a0080,
+
+    // Violet
+    'violet': #673ab7,
+    'violet-light': #9a67ea,
+    'violet-dark': #320b86,
+
+    // Blue
+    'blue': #2196f3,
+    'blue-light': #6ec6ff,
+    'blue-dark': #0069c0,
+
+    // Cyan
+    'cyan': #00bcd4,
+    'cyan-light': #62efff,
+    'cyan-dark': #008ba3,
+
+    // Teal
+    'teal': #009688,
+    'teal-light': #52c7b8,
+    'teal-dark': #00675b,
+
+    // Green
+    'green': #4caf50,
+    'green-light': #80e27e,
+    'green-dark': #087f23,
+
+    // Lime
+    'lime': #cddc39,
+    'lime-light': #ffff6e,
+    'lime-dark': #99aa00,
+
+    // Yellow
+    'yellow': #ffeb3b,
+    'yellow-light': #ffff72,
+    'yellow-dark': #c8b900,
+
+    // Orange
+    'orange': #ff9800,
+    'orange-light': #ffc947,
+    'orange-dark': #c66900,
+
+    // Brown
+    'brown': #795548,
+    'brown-light': #a98274,
+    'brown-dark': #4b2c20,
+
+    // Gray
+    'gray': #9e9e9e,
+    'gray-light': #cfcfcf,
+    'gray-dark': #707070,
+
+    // Blue Gray
+    'blue-gray': #607d8b,
+    'blue-gray-light': #8eacbb,
+    'blue-gray-dark': #34515e,
+);
+
 .vavatar {
     width:            50px;
     height:           50px;
@@ -16,7 +90,12 @@
     color:            #FFFFFF;
 }
 
-/* Avatar Colors ---------------------------------------------*/
-.vavatar.bg-red {
-    background: #000000;
+// Background
+//------------------------------------------------
+.vavatar {
+    @each $color, $value in $colors {
+        &.bg-#{$color}{
+            background-color: $value !important;
+        }
+    }
 }
