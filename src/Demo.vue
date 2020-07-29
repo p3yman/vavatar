@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <v-avatar />
-    <v-avatar />
-    <v-avatar />
-    <v-avatar />
+  <div id="demo">
+    <v-avatar initials="PS" />
+    <v-avatar initials="SG" />
+    <v-avatar initials="2E" />
+    <v-avatar initials="HB" />
   </div>
 </template>
 
@@ -11,10 +11,20 @@
 import VAvatar from './VAvatar.vue';
 
 export default {
-  name: 'App',
+  name: 'Demo',
 
   components: {
     VAvatar,
   },
 };
 </script>
+
+<style scoped>
+  #demo {
+    padding: 50px;
+    display: flex;
+  }
+  #demo > * {
+    margin: 0 10px 10px 0;
+  }
+</style>
